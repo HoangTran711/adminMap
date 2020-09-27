@@ -1,0 +1,28 @@
+.marker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#2E9AFE;
+    &:hover {
+        color:#FA5858;
+    }
+    i {
+        color:inherit;
+        font-size:1.5rem;
+        transition:all .2s;
+        //animation: click .5s infinite;
+    }
+    p {
+        font-size:0.5rem;
+        color:black;
+    }
+
+}
+@keyframes click { 
+    from {
+        transform:translateY(0);
+    }
+    to {
+        transform:translateY(-2px);
+    }
+}

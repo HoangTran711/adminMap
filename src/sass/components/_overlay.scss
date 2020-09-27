@@ -1,0 +1,125 @@
+.overlay {
+    background-image: linear-gradient(260deg, 
+                                    rgba($color-white, .9) 0%,
+                                    rgba($color-white, .9) 61%,
+                                    transparent 61%) ,
+                            url(../images/nat-10.jpg);
+    background-size:100%;
+    background-repeat: no-repeat;
+    height: 30rem;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    padding:5rem 10rem;
+    position:absolute;
+    top:50%;
+    z-index:120;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border:1px solid #E6E6E6;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size:1.7rem;
+    transition:all .2s;
+    input {
+        font-size:1.3rem;
+        height:1.7rem;
+        font-weight: 600;
+        margin:0;
+        padding:0.2rem 1rem;
+        width:20rem;
+        background-color:transparent;
+        border:none;
+        border-bottom:1px solid #BDBDBD;
+        &:focus {
+            outline:none;
+            border-bottom:1px solid #2E64FE;
+        }
+    }
+    label {
+        color:white;
+        width:12rem;
+        font-weight:600;
+    }
+    &__input-type {
+        display:flex;
+        flex-direction:row;
+        #type {
+        }
+    }
+    &__input-id {
+        margin-top:1.7rem;
+        display:flex;
+        flex-direction:row;
+        #id {
+        }
+    }
+    &__input-properties {
+        &-name {
+            margin-top:1.7rem;
+            display:flex;
+            flex-direction:row;
+            #name {
+                
+            }
+        }
+        &-description {
+            margin-top:1.7rem;
+            display:flex;
+            flex-direction:row;
+            #description {
+                
+            }
+        }
+    }
+    &__input-coordinates {
+        margin-top:1.7rem;
+        display:flex;
+        flex-direction:row;
+        #coordinates {
+            
+        }
+    }
+    &__btn-submit {
+        width:100%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        .btn {
+            margin-top:0rem;
+            background-color:#2E64FE;
+            padding:.7rem 1.2rem;
+            border-radius:20px;
+            border:0.5px solid blue;
+            &:hover {
+                background-color:blue;
+                color:white;
+            }
+            &-danger {
+                
+                margin-top:0rem;
+                background-color:#FE2E64;
+                padding:.7rem 1.2rem;
+                border-radius:20px;
+                border:0.5px solid red;
+                &:hover {
+                    background-color:red;
+                    color:white;
+                }
+            }
+        }
+    }
+}
+.back-ground__overlay {
+    transition:all .2s;
+    width:100%;
+    height:100%;
+    position: absolute;
+    background-color:rgba(black,.15);
+    z-index:99;
+}
+.btn__click {
+    display:flex;
+    flex-direction: row;
+    width:60%;
+    justify-content: space-between;
+}

@@ -1,0 +1,15 @@
+.popup__container {
+    display:flex;
+    flex-direction: column;
+    width:22rem;
+    .popup__text {
+        color:#BDBDBD;
+    }
+    .popup__image {
+
+        height:7rem;
+    }
+}
+.popup__container:parent {
+    display:none !important;
+}
