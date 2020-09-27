@@ -32,8 +32,8 @@ function Overlay({_id,coordinate}) {
             fetch('http://localhost:8080/')
             .then(res => res.json())
             .then (result => {
-                setType(result.location[0].type);
-                setId(result.location.length -1);
+                setType(result.features[0].type);
+                setId(result.features.length -1);
                 setCreate(true);
                 setCoordinates(coordinate);
             })
