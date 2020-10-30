@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser,faKey } from '@fortawesome/free-solid-svg-icons'
 import { Spinner,Button } from 'react-bootstrap';
 
-function Login({isLogin,setIsLogin}) {
+function Login() {
     const [user,setUser] = useState({
         email:'',
         password:'',
